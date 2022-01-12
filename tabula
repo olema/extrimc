@@ -1,3 +1,7 @@
 вывести исходник после обработки препроцессором:
 	$ gcc -E xxx.c
 
+макрос с переменным количеством параметров
+#define LOG_ERROR(format, ...) \
+	fprintf(stderr, format, __VA_ARGS__)
+
